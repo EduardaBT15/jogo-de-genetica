@@ -1,6 +1,11 @@
-// Perguntas e respostas
-const questionBank = [
-        {
+// Embaralha as perguntas automaticamente
+function shuffleQuestions(questions) {
+    return questions.sort(() => Math.random() - 0.5);
+} // pode alterar
+
+// Banco de Perguntas
+const questionBank = shuffleQuestions([
+    {
     question: "O que significa dizer que um gene é 'dominante'?",
     options: [ "Ele só se expressa em organismos unicelulares", "Ele se expressa mesmo se houver uma cópia recessiva", "Ele desaparece na presença de um gene recessivo", "Ele precisa de duas cópias para ser expresso"],
     correctAnswer: 1
@@ -315,6 +320,7 @@ function loadQuestion() {
         button.onclick = () => checkAnswer(index);
         optionsElement.appendChild(button);
     });
+    console.log(questionBank); // pode alterar
 
     // Atualizar pontuação
     updateScore();
