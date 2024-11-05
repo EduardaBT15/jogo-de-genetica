@@ -10,9 +10,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('https://i.imgur.com/JMZNOaR.jpg'); /* Imagem de fundo que lembra uma estrutura de DNA */
-    background-size: cover;
-    background-position: center;
 }
 
 /* Estilo para o título */
