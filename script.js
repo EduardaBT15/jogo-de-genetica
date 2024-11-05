@@ -1,8 +1,3 @@
-// Embaralha as perguntas automaticamente
-function shuffleQuestions(questions) {
-    return questions.sort(() => Math.random() - 0.5);
-} // pode alterar
-
 // Banco de Perguntas
 const questionBank = shuffleQuestions([
     {
@@ -320,7 +315,7 @@ function loadQuestion() {
         button.onclick = () => checkAnswer(index);
         optionsElement.appendChild(button);
     });
-    console.log(questionBank); // pode alterar
+
 
     // Atualizar pontuação
     updateScore();
